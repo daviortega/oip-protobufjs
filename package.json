@@ -9,8 +9,8 @@
     "prepublish": "yarn compile"
   },
   "dependencies": {
-    "@daviortega/js-oip": "^2.4.5",
-    "bitcoinjs-lib": "^5.0.2",
+    "@daviortega/js-oip": "^2.4.6-0",
+    "bitcoinjs-lib": "^5.1.7",
     "bitcoinjs-message": "^2.0.0",
     "core-js": "^2.6.11",
     "js-pascalcase": "^1.2.1",
