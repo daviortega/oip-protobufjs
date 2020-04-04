@@ -27,8 +27,8 @@ describe('RecordProto', () => {
       occupation: 'dev',
       crystals: 2,
       hobbies: 2,
-      friends: [Buffer.from('0x11')],
-      familyMembers: [Buffer.from('0x33')]
+      friends: [Buffer.from('b2c12a7c8dc4dd82abe49ff28351c163ed3dc71a9ec1d5f8dd8d38d8b9f99a04')],
+      familyMembers: [Buffer.from('b2f12a7c8dc4dd82abe49ff28351c163ed3dc71a9ec1d5f8dd8d38d8b9f99a04')]
     }
 
     const details = buildOipDetails([{ payload, name: 'mockName', descriptor: fileDescriptor }])
@@ -38,7 +38,6 @@ describe('RecordProto', () => {
       wif,
       network: 'testnet'
     })
-    console.log(signedMessage64)
   })
   it('create record from existing template', () => {
     const descriptor = 'ClEKG29pcDVfcmVjb3JkX3RlbXBsYXRlcy5wcm90bxIVb2lwNS5yZWNvcmQudGVtcGxhdGVzIhMKAVASDgoGcG93ZXJzGAEgAygJYgZwcm90bzM='
@@ -48,7 +47,6 @@ describe('RecordProto', () => {
     const details = buildOipDetails({ descriptor, name, payload })
     const { signedMessage64 } = recordProtoBuilder({ details, wif, network: 'testnet' })
 
-    console.log(signedMessage64)
   })
   it('create a record from luna template', () => {
     const pubkey = 'ofbB67gqjgaYi45u8Qk2U3hGoCmyZcgbN4'
@@ -66,8 +64,6 @@ describe('RecordProto', () => {
       wif,
       network: 'testnet',
     })
-    console.log(record.signedMessage64)
-
   })
 })
 

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { ECPair } from 'bitcoinjs-lib'
-import { Networks } from 'js-oip'
+import { Networks } from '@daviortega/js-oip'
 import { util as protoUtil } from 'protobufjs'
 import { verify } from 'bitcoinjs-message'
 

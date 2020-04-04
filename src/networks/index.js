@@ -1,4 +1,4 @@
-import { Networks } from 'js-oip'
+import { Networks } from '@daviortega/js-oip'
 
 const { floMainnet, floTestnet } = Networks
 

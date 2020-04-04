@@ -1,5 +1,5 @@
 {
-  "name": "oip-protobufjs",
+  "name": "@daviortega/oip-protobufjs",
   "version": "1.6.10",
   "main": "lib/index",
   "license": "MIT",
@@ -9,10 +9,10 @@
     "prepublish": "yarn compile"
   },
   "dependencies": {
+    "@daviortega/js-oip": "^2.4.5",
     "bitcoinjs-lib": "^5.0.2",
     "bitcoinjs-message": "^2.0.0",
-    "core-js": "^3.6.2",
-    "js-oip": "git+https://github.com/oipwg/js-oip.git#fix-update-to-node-12",
+    "core-js": "^2.6.11",
     "js-pascalcase": "^1.2.1",
     "lodash": "^4.17.13",
     "protobufjs": "^6.8.8"

@@ -75,13 +75,13 @@ describe('Test builder/helper functions', () => {
           friends: {
             extend: undefined,
             id: 6,
-            type: 'Txid',
+            type: 'OipRef',
             repeated: true
           },
           familyMembers: {
             extend: undefined,
             id: 7,
-            type: 'Txid',
+            type: 'OipRef',
             repeated: true
           }
         },
@@ -91,12 +91,12 @@ describe('Test builder/helper functions', () => {
             values: {
               Crystals_AGATE: 1,
               Crystals_ROSE: 2,
-              UNDEFINED: 0
+              Crystals_UNDEFINED: 0
             }
           },
           Hobbies: {
             rule: undefined,
-            values: { 'Hobbies_MTG': 1, 'Hobbies_ABLETON': 2, UNDEFINED: 0 }
+            values: { 'Hobbies_MTG': 1, 'Hobbies_ABLETON': 2,  Hobbies_UNDEFINED: 0 }
           }
         }
       })
